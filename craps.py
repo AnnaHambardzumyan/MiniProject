@@ -9,9 +9,9 @@ def game():
     dice1 = random.randint(1, 6)
     dice2 = random.randint(1, 6)
     print(f"The sum of dice is {dice1} + {dice2} = {dice_sum(dice1, dice2)}")
-    if dice_sum(dice1, dice2) == 7 or dice_sum(dice1, dice2) == 11:
+    if dice_sum(dice1, dice2) in (7, 11):
         print("Congratulations!!! You WON.")
-    elif dice_sum(dice1, dice2) == 2 or dice_sum(dice1, dice2) == 3 or dice_sum(dice1, dice2) == 12:
+    elif dice_sum(dice1, dice2) in  (2, 3, 12):
         print("I'm sorry, you lost.")
     else:
         goal = dice_sum(dice1, dice2)
