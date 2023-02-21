@@ -33,7 +33,7 @@ if answer.lower() == "yes":
     again = input("Do you want to play again?(yes/no): ")
     while again.lower() == "yes":
         game()
-        again = input("Do you want to play again?(yes/no): ") 
+        again = input("Do you want to play again?(yes/no): ")
     if again.lower() == "no":
         print("Thank you for participation.")
 else:
