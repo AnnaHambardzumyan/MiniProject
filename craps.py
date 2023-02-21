@@ -11,7 +11,7 @@ def game():
     print(f"The sum of dice is {dice1} + {dice2} = {dice_sum(dice1, dice2)}")
     if dice_sum(dice1, dice2) in (7, 11):
         print("Congratulations!!! You WON.")
-    elif dice_sum(dice1, dice2) in  (2, 3, 12):
+    elif dice_sum(dice1, dice2) in (2, 3, 12):
         print("I'm sorry, you lost.")
     else:
         goal = dice_sum(dice1, dice2)
@@ -33,7 +33,7 @@ if answer.lower() == "yes":
     again = input("Do you want to play again?(yes/no): ")
     while again.lower() == "yes":
         game()
-        again = input("Do you want to play again?(yes/no): ") 
+        again = input("Do you want to play again?(yes/no): ")
     if again.lower() == "no":
         print("Thank you for participation.")
 else:
